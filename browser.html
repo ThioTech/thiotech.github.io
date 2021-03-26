@@ -59,7 +59,52 @@
 </style>
 <body onload="move()" style="background-color:black;">
 
-<center><h1 style="color:white; font-family:Arial;">Loading...</h1></center>
+<center><h1> Please wait... </h1<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<body onload="move()" style="background-color:black;">
+  <center> <h1> Please wait... </h1> </center>
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+
+<br> 
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 250);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+        location.replace("https://Microware.tech4helpus.repl.co/BW.html");
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+</center>
 
 <div id="myProgress">
   <div id="myBar">10%</div>
