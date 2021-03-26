@@ -1,1 +1,0 @@
-# thiotech.github.io
