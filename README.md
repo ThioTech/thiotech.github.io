@@ -12,5 +12,6 @@ w3schools - https://w3schools.com
 GitHub - https://github.com      
 
 ![logo](https://user-images.githubusercontent.com/80725043/112736504-7e87a680-8f10-11eb-8158-eb889b8235a2.png)  
-![logo](https://github.com/favicon.ico)
+![logo](https://www.kindpng.com/picc/m/128-1280187_github-logo-png-github-transparent-png.png)
 ![logo](https://blog.replit.com/images/logo.png)
+![logo](https://hcaptcha.com/favicon.ico)
