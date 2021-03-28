@@ -42,54 +42,8 @@
   <a href="https://docs.mobileworld.repl.co/en?from_main_site">Docs</a>
   <a href="/login.html" class="right">Login or Sign up</a>
 </div>
-  <style>
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
-}
 
-#myBar {
-  width: 10%;
-  height: 30px;
-  background-color: #4CAF50;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-</style>
-<body onload="move()" style="background-color:black;">
-
-<center></center>
-
-<div id="myProgress">
-  <div id="myBar">This window will close soon.</div>
-</div>
-
-<br> 
-
-<script>
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 10;
-    var id = setInterval(frame, 250);
-    function frame() {
-      if (width >= 50) {
-        clearInterval(id);
-        i = 0;
-        location.replace("https://thiotech.github.io/closeWindow");
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width  + "%";
-      }
-    }
-  }
-}
-</script>
-<img src="https://media.tenor.com/images/cbae2dfd31aa5ec2fcb7f46b65e1550f/tenor.gif"> <h1>Thanks! Your form has been submitted.</h1> 
+<img src="https://media.tenor.com/images/cbae2dfd31aa5ec2fcb7f46b65e1550f/tenor.gif"> <h1>Thanks! Your form has been submitted.</h1>  <br> <h3> btw , this window will <b> close </b> soon. </h3>
 <script>
   function preloaderFadeOutInit(){
 $('.preloader').fadeOut('slow');
