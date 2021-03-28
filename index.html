@@ -6,66 +6,6 @@
 <meta property="og:site_name" content="ThioTech" />
 <meta data-react-helmet="true" property="og:title" content="Home on ThioTech's Official Website"/>
 <meta data-react-helmet="true" property="og:image" content="https://mobileworld.repl.co/static/favicon.ico"/>
-<style>
-  /* Popup box BEGIN */
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
-}
-/* Popup box BEGIN */
-  </style> 
   <meta property="og:keywords" content="ThioTech , ThioTech Home" /><meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:site" content="@Thio_Tech" />
 <meta property="twitter:site:id" content="@Thio_Tech" />
@@ -102,15 +42,8 @@
   <a href="/login.html" class="right">Login or Sign up</a>
 </div>
 <h1> Just wonder around this website... </h1> 
-  <br> <h3> Oh , you need help?  </h3> <a class="trigger_popup_fricc">Submit a ticket!</a>
-
-<div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">&times;</div>
-        <script type="text/javascript" src="https://form.jotform.com/jsform/210858230456051"></script>
-    </div>
-</div>  
+  <br> <h3> Oh , you need help?  </h3>    <a href="/help">Contact us or Submit a ticket </a> 
+<script type="text/javascript" src="https://form.jotform.com/jsform/210858230456051"></script>
 <script>
   function preloaderFadeOutInit(){
 $('.preloader').fadeOut('slow');
