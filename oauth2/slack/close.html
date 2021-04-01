@@ -1,0 +1,10 @@
+      <script>
+        const origins = new Set();
+        origins.add(window.location.origin);
+        origins.add('https://thiotech.github.io');
+        origins.add('https://mobileworld.repl.co');
+        for (const origin of origins) {
+          window.opener.postMessage("authenticated", origin);
+        }
+      </script>
+    
