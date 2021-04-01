@@ -56,6 +56,12 @@
 
    <a href="javascript:void( window.open( 'https://thiotech.github.io/help', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "> Contact us or Submit a ticket</a> 
 <script>
+  var timer = setInterval(function() { 
+    if(win.closed) {
+        clearInterval(timer);
+        alert('closed');
+    }
+}, 1000);
   function preloaderFadeOutInit(){
 $('.preloader').fadeOut('slow');
 $('body').attr('id','');
