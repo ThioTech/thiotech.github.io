@@ -53,54 +53,9 @@
   <a href="/login.html" class="right">Login or Sign up</a>
 </div> 
   <h1> Log in <br> to get access to <b> internals </b> </h1>
+	<a href="http://slack.com/oauth?client_id=1918671913861.1922596605187&scope=&user_scope=identity.basic&redirect_uri=&state=&granular_bot_scope=1&single_channel=0&install_redirect=&tracked=1&team="><img alt=""Sign in with Slack"" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x" /></a> 
 <script>
-  ;(function() {
-  var selem = document.currentScript;
-
-  var button = document.createElement('button');
-  button.className = "replit-auth-button";
-  button.textContent = 'Login With Slack';
-
-  if (location.protocol !== 'https:') {
-    var err = document.createElement('div');
-    err.className = "replit-auth-error";
-    err.textContent = 'Replit auth requires https!';
-    selem.parentNode.insertBefore(err, selem);
-  }
-
-  button.onclick = function() {
-    // var authWindow = window.open('https://repl.it/auth_with_repl_site?domain=' + location.host)
-    window.addEventListener('message', authComplete);
-
-    var h = 500;
-		var w = 350;
-		var left = (screen.width / 2) - ( w / 2);
-		var top = (screen.height / 2) - (h / 2);
-
-    var authWindow = window.open(
-      'hhttps://slack.com/oauth?client_id=1918671913861.1922596605187&scope=&user_scope=identity.basic&redirect_uri=&state=&granular_bot_scope=1&single_channel=0&install_redirect=&tracked=1&team=',
-      '_blank',
-      'modal =yes, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='300', height='300', top='300', left='300')
-
-    function authComplete(e) {
-      if (e.data !== 'auth_complete') {
-        return;
-      }
-
-      window.removeEventListener('message', authComplete);
-
-      authWindow.close();
-      if (selem.attributes.authed.value) {
-        eval(selem.attributes.authed.value);
-      } else {
-        location.reload();
-      }
-    }
-  }
-
-  selem.parentNode.insertBefore(button, selem);
-})();
-  
+ 
   function preloaderFadeOutInit(){
 $('.preloader').fadeOut('slow');
 $('body').attr('id','');
